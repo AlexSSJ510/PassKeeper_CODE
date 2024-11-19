@@ -59,6 +59,10 @@ class TestGestorContraseñas(unittest.TestCase):
         self.assertEqual(resultado, "Contraseña actualizada para usuario3 en twitter.")
         self.assertEqual(self.gestor.contrasenas[("usuario3", "twitter")].valor, "NewPassword1!")
 
+    def test_editar_contrasena_no_existente(self):
+        resultado = self.gestor.editar_contrasena("usuario_no_existente", "facebook", "NewPassword123!")
+        self.assertEqual(resultado, "El usuario y la red no existen.")
+
 
 
 if __name__ == '__main__':

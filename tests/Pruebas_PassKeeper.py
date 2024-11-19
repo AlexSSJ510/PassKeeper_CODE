@@ -19,6 +19,9 @@ class TestContrasena(unittest.TestCase):
         contrasena = Contrasena("Password!")
         self.assertFalse(contrasena.es_segura())
 
+    def test_contrasena_no_segura_sin_letras(self):
+        contrasena = Contrasena("12345678!")
+        self.assertFalse(contrasena.es_segura())
 
 if __name__ == '__main__':
     unittest.main()

@@ -51,6 +51,15 @@ class TestGestorContraseñas(unittest.TestCase):
         resultado = self.gestor.agregar_contrasena("usuario2", "gmail", contrasena2)
         self.assertEqual(resultado, "El usuario y la red ya tienen una contraseña registrada.")
 
+    def test_editar_contrasena(self):
+        contrasena_original = Contrasena("OldPassword123!")
+        contrasena_nueva = Contrasena("NewPassword1!")
+        self.gestor.agregar_contrasena("usuario3", "twitter", contrasena_original)
+        resultado = self.gestor.editar_contrasena("usuario3", "twitter", "NewPassword1!")
+        self.assertEqual(resultado, "Contraseña actualizada para usuario3 en twitter.")
+        self.assertEqual(self.gestor.contrasenas[("usuario3", "twitter")].valor, "NewPassword1!")
+
+
 
 if __name__ == '__main__':
     unittest.main()

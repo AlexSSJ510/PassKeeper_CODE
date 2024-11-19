@@ -32,5 +32,18 @@ class TestContrasena(unittest.TestCase):
         self.assertFalse(contrasena.es_segura())
 
 
+class TestGestorContraseñas(unittest.TestCase):
+
+    def setUp(self):
+        # Se ejecuta antes de cada prueba para configurar el entorno
+        self.gestor = GestorContraseñas()
+
+    def test_agregar_contrasena(self):
+        contrasena = Contrasena("Password123!")
+        resultado = self.gestor.agregar_contrasena("usuario1", "facebook", contrasena)
+        self.assertEqual(resultado, "Contraseña añadida correctamente para usuario1 en facebook.")
+        self.assertIn(("usuario1", "facebook"), self.gestor.contrasenas)
+
+
 if __name__ == '__main__':
     unittest.main()

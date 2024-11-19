@@ -15,9 +15,10 @@ def abrir_agregar_contrasena():
     ventana_agregar = tk.Toplevel(root)
     ventana_agregar.title("Agregar Contraseña")
     ventana_agregar.geometry("400x400")
+    ventana_agregar.configure(bg="#5b5962")
 
     # Etiqueta y campo para el nombre de usuario
-    lbl_username = tk.Label(ventana_agregar, text="Nombre de Usuario:")
+    lbl_username = tk.Label(ventana_agregar, text="Nombre de Usuario:", font=("Times New Roman", 13), bg="#1e1644", fg="White")
     lbl_username.pack(pady=5)
     entry_username = tk.Entry(ventana_agregar)
     entry_username.pack(pady=5)
@@ -240,13 +241,18 @@ def restaurar_contrasenas():
     except Exception as e:
         messagebox.showerror("Error", f"No se pudo restaurar el backup. Error: {str(e)}")
 
+
 # Configuración de la ventana principal
 root = tk.Tk()
 root.title("PassKeeper - Gestor de Contraseñas")
 root.geometry("500x600")
+root.configure(bg="#5b5962")
+fuente_boton = ("Times New Roman", 12)
+color_boton = "#262335"
+
 
 # Etiquetas y campos de entrada
-lbl_instrucciones = tk.Label(root, text="PassKeeper - Gestor de Contraseñas", font=("Arial", 16))
+lbl_instrucciones = tk.Label(root, text="PassKeeper - Gestor de Contraseñas", font=("Times New Roman", 20), bg="#5b5962", fg="#96a5b1")
 lbl_instrucciones.pack(pady=10)
 
 image_path = "src/vista/Candado.png"
@@ -255,25 +261,25 @@ image_label = tk.Label(root, image=img)  # Crear el label con la imagen
 image_label.pack(pady=10)  # Empaquetar la imagen debajo del título
 
 # Modificar el botón en la ventana principal
-btn_agregar = tk.Button(root, text="Agregar Contraseña", command=abrir_agregar_contrasena)
+btn_agregar = tk.Button(root, text="Agregar Contraseña", command=abrir_agregar_contrasena, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_agregar.pack(pady=10)
 
-btn_editar = tk.Button(root, text="Editar Contraseña", command=abrir_editar_contrasena)
+btn_editar = tk.Button(root, text="Editar Contraseña", command=abrir_editar_contrasena, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_editar.pack(pady=10)
 
-btn_eliminar = tk.Button(root, text="Eliminar Contraseña", command=abrir_eliminar_contrasena)
+btn_eliminar = tk.Button(root, text="Eliminar Contraseña", command=abrir_eliminar_contrasena, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_eliminar.pack(pady=10)
 
 # Añadir un botón en la ventana principal
-btn_ver_contrasenas = tk.Button(root, text="Ver Contraseñas", command=ver_contrasenas)
+btn_ver_contrasenas = tk.Button(root, text="Ver Contraseñas", command=ver_contrasenas, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_ver_contrasenas.pack(pady=10)
 
 # Botón para Backup
-btn_backup = tk.Button(root, text="Realizar Backup", command=backup_contrasenas)
+btn_backup = tk.Button(root, text="Realizar Backup", command=backup_contrasenas, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_backup.pack(pady=10)
 
 # Botón para Restaurar
-btn_restaurar = tk.Button(root, text="Restaurar desde Backup", command=restaurar_contrasenas)
+btn_restaurar = tk.Button(root, text="Restaurar desde Backup", command=restaurar_contrasenas, font=fuente_boton, bg=color_boton, width=20, fg="white")
 btn_restaurar.pack(pady=10)
 
 # Ejecutar la aplicación

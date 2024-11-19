@@ -63,6 +63,13 @@ class TestGestorContraseñas(unittest.TestCase):
         resultado = self.gestor.editar_contrasena("usuario_no_existente", "facebook", "NewPassword123!")
         self.assertEqual(resultado, "El usuario y la red no existen.")
 
+    def test_eliminar_contrasena(self):
+        contrasena = Contrasena("Password123!")
+        self.gestor.agregar_contrasena("usuario4", "linkedin", contrasena)
+        resultado = self.gestor.eliminar_contrasena("usuario4", "linkedin")
+        self.assertEqual(resultado, "Contraseña eliminada para usuario4 en linkedin.")
+        self.assertNotIn(("usuario4", "linkedin"), self.gestor.contrasenas)
+
 
 
 if __name__ == '__main__':

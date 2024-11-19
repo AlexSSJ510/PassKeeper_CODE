@@ -27,5 +27,10 @@ class TestContrasena(unittest.TestCase):
         contrasena = Contrasena("Password123")
         self.assertFalse(contrasena.es_segura())
 
+    def test_contrasena_no_segura_sin_mayusculas(self):
+        contrasena = Contrasena("password123!")
+        self.assertFalse(contrasena.es_segura())
+
+
 if __name__ == '__main__':
     unittest.main()

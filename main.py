@@ -2,8 +2,8 @@ import json
 import tkinter as tk
 from tkinter import messagebox
 
-from src.logica.Agregar_Contraseña import Contrasena
-from src.logica.Agregar_Contraseña import GestorContraseñas
+from src.logica.Contraseñas import Contrasena
+from src.logica.Contraseñas import GestorContraseñas
 
 # Crear el gestor de contraseñas
 gestor = GestorContraseñas()

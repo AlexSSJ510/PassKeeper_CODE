@@ -3,12 +3,19 @@ class Contrasena:
         self.valor = valor
 
     def es_segura(self):
-        return (
-                len(self.valor) >= 8 and
-                any(c.isdigit() for c in self.valor) and
-                any(c.isalpha() for c in self.valor) and
-                any(c in "!@#$%^&*()_+-=" for c in self.valor)
-        )
+        # Verificar que la longitud sea al menos 8 caracteres
+        longitud_ok = len(self.valor) >= 8
+        # Verificar que tenga al menos un dígito
+        tiene_digito = any(c.isdigit() for c in self.valor)
+        # Verificar que tenga al menos una letra
+        tiene_letra = any(c.isalpha() for c in self.valor)
+        # Verificar que tenga al menos un carácter especial
+        tiene_especial = any(c in "!@#$%^&*()_+-=" for c in self.valor)
+        # Verificar que tenga al menos una letra mayúscula
+        tiene_mayuscula = any(c.isupper() for c in self.valor)
+
+        # La contraseña es segura si cumple con todos los requisitos
+        return longitud_ok and tiene_digito and tiene_letra and tiene_especial and tiene_mayuscula
 
 
 class GestorContraseñas:

@@ -74,6 +74,21 @@ class TestGestorContraseñas(unittest.TestCase):
         resultado = self.gestor.eliminar_contrasena("usuario_no_existente", "facebook")
         self.assertEqual(resultado, "El usuario y la red no existen.")
 
+    def test_obtener_contrasenas(self):
+        contrasena1 = Contrasena("Password123!")
+        contrasena2 = Contrasena("AnotherPassword1!")
+
+        # Adding passwords for two different services
+        self.gestor.agregar_contrasena("usuario5", "instagram", contrasena1)
+        self.gestor.agregar_contrasena("usuario6", "whatsapp", contrasena2)
+
+        # Retrieving all stored passwords
+        contrasenas = self.gestor.obtener_contrasenas()
+
+        # Correcting the expected values to match the actual data
+        self.assertEqual(len(contrasenas), 2)
+        self.assertEqual(contrasenas[0], (("usuario5","instagram"), "Password123!"))
+        self.assertEqual(contrasenas[1], (("usuario6", "whatsapp"),"AnotherPassword1!"))
 
 
 if __name__ == '__main__':

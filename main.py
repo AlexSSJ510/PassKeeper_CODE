@@ -1,3 +1,4 @@
+import json
 import tkinter as tk
 from tkinter import messagebox
 
@@ -66,6 +67,7 @@ def abrir_agregar_contrasena():
     btn_cerrar = tk.Button(ventana_agregar, text="Cerrar", command=ventana_agregar.destroy)
     btn_cerrar.pack(pady=10)
 
+
 def abrir_editar_contrasena():
     ventana_editar = tk.Toplevel(root)
     ventana_editar.title("Editar Contraseña")
@@ -118,6 +120,7 @@ def abrir_editar_contrasena():
     btn_cerrar = tk.Button(ventana_editar, text="Cerrar", command=ventana_editar.destroy)
     btn_cerrar.pack(pady=10)
 
+
 def abrir_eliminar_contrasena():
     ventana_eliminar = tk.Toplevel(root)
     ventana_eliminar.title("Eliminar Contraseña")
@@ -148,6 +151,7 @@ def abrir_eliminar_contrasena():
     # Botón para cerrar la ventana
     btn_cerrar = tk.Button(ventana_eliminar, text="Cerrar", command=ventana_eliminar.destroy)
     btn_cerrar.pack(pady=10)
+
 
 def ver_contrasenas():
     # Crear una nueva ventana para ver las contraseñas
@@ -203,14 +207,52 @@ def ver_contrasenas():
     btn_cerrar = tk.Button(ventana_ver, text="Cerrar", command=ventana_ver.destroy)
     btn_cerrar.pack(pady=10)
 
+
+def backup_contrasenas():
+    try:
+        # Convertir las contraseñas a un formato adecuado para guardar en JSON
+        contrasenas_data = {}
+        for (usuario, red), contrasena in gestor.contrasenas.items():
+            contrasenas_data[f"{usuario} - {red}"] = contrasena.valor
+
+        # Guardar en un archivo JSON
+        with open("backup_contrasenas.json", "w") as archivo:
+            json.dump(contrasenas_data, archivo, indent=4)
+
+        messagebox.showinfo("Backup Exitoso", "El backup de contraseñas se ha realizado con éxito.")
+    except Exception as e:
+        messagebox.showerror("Error", f"No se pudo realizar el backup. Error: {str(e)}")
+
+
+def restaurar_contrasenas():
+    try:
+        # Leer el archivo JSON
+        with open("backup_contrasenas.json", "r") as archivo:
+            contrasenas_data = json.load(archivo)
+
+        # Restaurar las contraseñas
+        for usuario_red, contrasena in contrasenas_data.items():
+            usuario, red = usuario_red.split(" - ")
+            # Aquí se debe usar el método adecuado del gestor para agregar contraseñas
+            gestor.agregar_contrasena(usuario, red, Contrasena(contrasena))
+
+        messagebox.showinfo("Restauración Exitosa", "Las contraseñas se han restaurado correctamente desde el backup.")
+    except Exception as e:
+        messagebox.showerror("Error", f"No se pudo restaurar el backup. Error: {str(e)}")
+
 # Configuración de la ventana principal
 root = tk.Tk()
 root.title("PassKeeper - Gestor de Contraseñas")
-root.geometry("400x400")
+root.geometry("500x600")
 
 # Etiquetas y campos de entrada
 lbl_instrucciones = tk.Label(root, text="PassKeeper - Gestor de Contraseñas", font=("Arial", 16))
 lbl_instrucciones.pack(pady=10)
+
+image_path = "src/vista/Candado.png"
+img = tk.PhotoImage(file=image_path)  # Cargar la imagen
+image_label = tk.Label(root, image=img)  # Crear el label con la imagen
+image_label.pack(pady=10)  # Empaquetar la imagen debajo del título
 
 # Modificar el botón en la ventana principal
 btn_agregar = tk.Button(root, text="Agregar Contraseña", command=abrir_agregar_contrasena)
@@ -225,6 +267,14 @@ btn_eliminar.pack(pady=10)
 # Añadir un botón en la ventana principal
 btn_ver_contrasenas = tk.Button(root, text="Ver Contraseñas", command=ver_contrasenas)
 btn_ver_contrasenas.pack(pady=10)
+
+# Botón para Backup
+btn_backup = tk.Button(root, text="Realizar Backup", command=backup_contrasenas)
+btn_backup.pack(pady=10)
+
+# Botón para Restaurar
+btn_restaurar = tk.Button(root, text="Restaurar desde Backup", command=restaurar_contrasenas)
+btn_restaurar.pack(pady=10)
 
 # Ejecutar la aplicación
 root.mainloop()

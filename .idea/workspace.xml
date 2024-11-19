@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PassKeeper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logica/Agregar_Contraseña.py" afterDir="false" />
+    <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="PASSKEEPER">
+      <change afterPath="$PROJECT_DIR$/src/vista/Candado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Pruebas_Unitarias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -40,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in Pruebas_Unitarias.py.executor": "Run",
     "Python.Agregar_Contraseña.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -47,7 +45,12 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PassKeeper\PassKeeper\src\vista" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PassKeeper" />
       <option name="ENV_FILES" value="" />
@@ -70,6 +73,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PassKeeper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -87,6 +110,19 @@
       <option name="presentableId" value="Default" />
       <updated>1731970901208</updated>
     </task>
+    <task id="LOCAL-00001" summary="PASSKEEPER">
+      <option name="closed" value="true" />
+      <created>1731974765066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731974765066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PASSKEEPER" />
+    <option name="LAST_COMMIT_MESSAGE" value="PASSKEEPER" />
   </component>
 </project>

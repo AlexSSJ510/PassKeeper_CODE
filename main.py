@@ -113,6 +113,7 @@ def abrir_editar_contrasena():
 
         resultado = gestor.editar_contrasena(username, red, nueva_contrasena)
         messagebox.showinfo("Resultado", resultado)
+        agregar_log(resultado)
         ventana_editar.destroy()
 
     btn_guardar = tk.Button(ventana_editar, text="Guardar Cambios", command=guardar_cambios)
@@ -240,6 +241,9 @@ def restaurar_contrasenas():
         messagebox.showinfo("Restauración Exitosa", "Las contraseñas se han restaurado correctamente desde el backup.")
     except Exception as e:
         messagebox.showerror("Error", f"No se pudo restaurar el backup. Error: {str(e)}")
+def agregar_log(mensaje):
+    log_text.insert(tk.END, f"{mensaje}\n")
+    log_text.yview(tk.END)  # Desplazar hacia abajo para ver el último mensaje
 
 
 # Configuración de la ventana principal
@@ -250,6 +254,9 @@ root.configure(bg="#5b5962")
 fuente_boton = ("Times New Roman", 12)
 color_boton = "#262335"
 
+# Crear el área de texto para mostrar los logs
+log_text = tk.Text(root, height=10, width=50, wrap=tk.WORD, font=("Times New Roman", 10), bg="#262335", fg="white")
+log_text.pack(pady=10)
 
 # Etiquetas y campos de entrada
 lbl_instrucciones = tk.Label(root, text="PassKeeper - Gestor de Contraseñas", font=("Times New Roman", 20), bg="#5b5962", fg="#96a5b1")

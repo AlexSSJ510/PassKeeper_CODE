@@ -1,3 +1,8 @@
+import json
+import tkinter as tk
+from tkinter import messagebox
+
+
 class Contrasena:
     def __init__(self, valor):
         self.valor = valor
@@ -48,3 +53,4 @@ class GestorContraseñas:
 
     def obtener_contrasenas(self):
         return [(username, contrasena.valor) for username, contrasena in self.contrasenas.items()]
+

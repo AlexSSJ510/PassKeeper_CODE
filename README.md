@@ -22,4 +22,4 @@ El objetivo de este proyecto es desarrollar una aplicación de gestión de contr
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/tuusuario/gestor-de-contraseñas.git
+   git clone https://github.com/AlexSSJ510/PassKeeper_CODE.git

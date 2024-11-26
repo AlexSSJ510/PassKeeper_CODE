@@ -11,12 +11,15 @@ El objetivo de este proyecto es desarrollar una aplicación de gestión de contr
 - **Pruebas Unitarias y de Integración**: El sistema debe incluir pruebas automáticas para verificar la correcta funcionalidad de sus componentes y la integración entre ellos.
 
 ## Integrantes del Equipo
+## Equipo de Desarrollo
 
-- **Castillo Poves Jose Andres** – Líder de Proyecto
-- **Meza Cantaro Jose Abel Junior** – Desarrollador Frontend y Diseño de UI
-- **Rafael Carpio Fabrizio Alexander** – Desarrollador Backend y Base de Datos
-- **Santos Tocas Fernando Javier** – Tester y Responsable de Documentación
-- **Zevallos Melendres Yimer Edison** - Desarrollador Backend y Base de Datos
+| Apellidos y Nombres | Rol |
+|---------------------|-----|
+|**Castillo Poves Jose Andres** | Scrum Master|
+|**Meza Cantaro Jose Abel Junior** | Desarrollador Frontend y Diseño de UI|
+|**Rafael Carpio Fabrizio Alexander** | Desarrollador Backend y Base de Datos|
+|**Santos Tocas Fernando Javier** | Tester y Responsable de Documentación|
+|**Zevallos Melendres Yimer Edison** | Desarrollador Backend y Base de Datos|
 
 ## Instrucciones de Uso
 

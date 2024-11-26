@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="PASSKEEPER_V0.02" />
+    <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="PASSKEEPER_V0.02">
+      <change afterPath="$PROJECT_DIR$/src/logica/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PassKeeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PassKeeper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -26,9 +32,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2p2j7wk4g8iOcavEJPUl8hfQObc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,18 +49,22 @@
     "Python tests.Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena.executor": "Run",
     "Python tests.Python tests in Pruebas_Unitarias.py.executor": "Run",
     "Python.Agregar_Contraseña.executor": "Run",
+    "Python.Login.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DEV"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Proyectos/PassKeeper_CODE",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\PassKeeper_CODE\src\logica" />
       <recent name="D:\PassKeeper\PassKeeper\src\vista" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PassKeeper" />
       <option name="ENV_FILES" value="" />

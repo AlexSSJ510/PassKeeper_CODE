@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="PASSKEEPER_V0.02">
-      <change afterPath="$PROJECT_DIR$/tests/PruebasAceptacion_PassKeeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/PruebasIntegracion_PassKeeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/PruebasSistema_PassKeeper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PassKeeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PassKeeper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vista/Candado2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vista/CandadoPass.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Pruebas_PassKeeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PruebasUnitarias_PassKeeper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup_contrasenas.json" beforeDir="false" afterPath="$PROJECT_DIR$/backup_contrasenas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Pruebas" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,18 +58,23 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Pruebas",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Proyectos/PassKeeper_G204",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Proyectos\PassKeeper_G204" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Proyectos\PassKeeper_G204\src\vista" />
+      <recent name="C:\Proyectos\PassKeeper_G204" />
       <recent name="D:\Proyectos\PassKeeper_CODE\src\logica" />
       <recent name="D:\PassKeeper\PassKeeper\src\vista" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PassKeeper" />
       <option name="ENV_FILES" value="" />
@@ -146,12 +150,58 @@
       <option name="project" value="LOCAL" />
       <updated>1731977641128</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pruebas_test_Integración(VERDE)">
+      <option name="closed" value="true" />
+      <created>1733149845523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733149845523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Pruebas_test_Sistema(VERDE)">
+      <option name="closed" value="true" />
+      <created>1733149899330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733149899330</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Pruebas_test_Aceptacion(VERDE)">
+      <option name="closed" value="true" />
+      <created>1733149928686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733149928686</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Pruebas_test_Aceptacion(VERDE)">
+      <option name="closed" value="true" />
+      <created>1733149936684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733149936684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PASSKEEPER" />
     <MESSAGE value="PASSKEEPER_V0.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="PASSKEEPER_V0.02" />
+    <MESSAGE value="Pruebas_test_Integración(VERDE)" />
+    <MESSAGE value="Pruebas_test_Sistema(VERDE)" />
+    <MESSAGE value="Pruebas_test_Aceptacion(VERDE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebas_test_Aceptacion(VERDE)" />
   </component>
 </project>

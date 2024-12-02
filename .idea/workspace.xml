@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c9ac086-451f-4899-92fd-ca8b546b154d" name="Changes" comment="PASSKEEPER_V0.02">
-      <change afterPath="$PROJECT_DIR$/src/logica/Login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PruebasAceptacion_PassKeeper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PruebasIntegracion_PassKeeper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PruebasSistema_PassKeeper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PassKeeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PassKeeper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Pruebas_PassKeeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PruebasUnitarias_PassKeeper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -47,14 +49,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for Pruebas_Unitarias.TestGestorContraseñas.test_agregar_contrasena.executor": "Run",
+    "Python tests.Python tests in PruebasAceptacion_PassKeeper.py.executor": "Run",
+    "Python tests.Python tests in PruebasIntegracion_PassKeeper.py.executor": "Run",
+    "Python tests.Python tests in Pruebas_PassKeeper.py.executor": "Run",
     "Python tests.Python tests in Pruebas_Unitarias.py.executor": "Run",
     "Python.Agregar_Contraseña.executor": "Run",
     "Python.Login.executor": "Run",
+    "Python.PruebasSistema_PassKeeper.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Proyectos/PassKeeper_CODE",
+    "git-widget-placeholder": "Pruebas",
+    "last_opened_file_path": "C:/Proyectos/PassKeeper_G204",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -111,7 +117,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
       </set>
     </attachedChunks>
   </component>

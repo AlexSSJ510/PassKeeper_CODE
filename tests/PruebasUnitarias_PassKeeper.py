@@ -1,10 +1,11 @@
 import unittest
 from unittest.mock import patch, mock_open
+import json
 
-from PassKeeper.src.logica.Contraseñas import Contrasena
-from PassKeeper.src.logica.Contraseñas import GestorContraseñas
+from src.logica.Contraseñas import Contrasena
+from src.logica.Contraseñas import GestorContraseñas
 
-
+#Pruebas Unitarias
 class TestContrasena(unittest.TestCase):
 
     def test_contrasena_segura(self):
@@ -78,14 +79,11 @@ class TestGestorContraseñas(unittest.TestCase):
         contrasena1 = Contrasena("Password123!")
         contrasena2 = Contrasena("AnotherPassword1!")
 
-        # Adding passwords for two different services
         self.gestor.agregar_contrasena("usuario5", "instagram", contrasena1)
         self.gestor.agregar_contrasena("usuario6", "whatsapp", contrasena2)
 
-        # Retrieving all stored passwords
         contrasenas = self.gestor.obtener_contrasenas()
 
-        # Correcting the expected values to match the actual data
         self.assertEqual(len(contrasenas), 2)
         self.assertEqual(contrasenas[0], (("usuario5","instagram"), "Password123!"))
         self.assertEqual(contrasenas[1], (("usuario6", "whatsapp"),"AnotherPassword1!"))
